@@ -1,1 +1,1 @@
-console.log('we are working')
+import { gymData } from '../data/gym-data.js';
