@@ -334,6 +334,18 @@ const viridian = {
     ]
 };
 
+const adventureData = [
+    pewter,
+    cerulean,
+    vermillion,
+    saffron,
+    celadon,
+    fuchsia,
+    cinnabar,
+    viridian
+];
+
+export default adventureData;
 
 
 
