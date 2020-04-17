@@ -33,5 +33,21 @@ export const renderResult = () => {
     const stringyEmptyArray = JSON.stringify(emptyArray);
     localStorage.setItem('CHOICE', stringyEmptyArray);
 
+};
 
+
+export const renderLose = () => {
+    // grabs the HTML elements to be rendered
+    const questTitle = document.getElementById('quest-title');
+    const questResult = document.getElementById('result-message');
+
+    const resultMessage = `You battled as hard as you could, but you couldn't make it to the League! Remember, every Pokemon has strengths and weaknesses.
+    Study up, and you'll be able to make it to the league next time!`;
+
+    // userData.hp += result.hp;
+    // userData.exp += result.experience;
+    // userData.completed[`${currentQuest.id}`] = true;
+
+    questTitle.textContent = 'Too Bad!';
+    questResult.textContent = resultMessage;
 };

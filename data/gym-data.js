@@ -23,7 +23,7 @@ const pewter = {
                     Someone should have studied more! Bug-Type pokemon are weak aagainst Rock-Types! However, you create a genius
                     strategy that allows you to win despite the disadvantage and earn the Boulder Badge! 
                     `,
-            hp: -20,
+            hp: -200,
             experience: 40
         },
         {
@@ -317,7 +317,7 @@ const viridian = {
                     Someone should have studied more! Bug-Type pokemon are weak aagainst Rock-Types! However, you create a genius
                     strategy that allows you to win despite the disadvantage and earn the Boulder Badge! 
                     `,
-            hp: -20,
+            hp: -200,
             experience: 40
         },
         {

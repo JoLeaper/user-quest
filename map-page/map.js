@@ -16,7 +16,6 @@ adventureData.forEach((adventure) => {
     } else {
         newLink = createQuestLink(adventure);
     }
-
-
     kantoMap.append(newLink);
+
 });
