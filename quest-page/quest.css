@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+
+#quest-container {
+    float: left;
+    width: 20px;
+    margin-left: -20px;
+}

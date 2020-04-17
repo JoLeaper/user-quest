@@ -15,3 +15,15 @@ export const createBanner = ((userData) => {
     trainerHp.textContent = userData.hp;
     trainerExp.textContent = userData.exp;
 });
+
+export const findById = ((id, array) => {
+    let foundObject;
+    
+    for (let i = 0; i < array.length; i++) {
+        const singleObject = array[i];
+        if (singleObject.id === id) {
+            foundObject = singleObject;
+        }    
+    } 
+    return foundObject;
+});

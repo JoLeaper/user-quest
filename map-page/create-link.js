@@ -1,12 +1,17 @@
 export const createLink = (object) => {
-    const a = document.createElement('a');
-    const link = document.createTextNode(`${object.title}`);
+    const link = document.createElement('a');
+    const linkLocation = document.createTextNode(`${object.title}`);
 
-    a.appendChild(link);
 
-    a.title = window.location.href;
-    a.href = `../quest-page/index.html?id=${object.id}`;
+    link.appendChild(linkLocation);
 
-    return a;
+    link.title = window.location.href;
+    link.href = `../quest-page/index.html?id=${object.id}`;
+
+    //style 1
+    //style 2
+    //style 3
+
+    return link;
 
 };
