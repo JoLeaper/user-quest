@@ -21,6 +21,7 @@ export const renderResult = () => {
 
     userData.hp += result.hp;
     userData.exp += result.experience;
+    userData.completed[`${currentQuest.id}`] = true;
 
     questTitle.textContent = currentQuest.title;
     questResult.textContent = resultMessage;

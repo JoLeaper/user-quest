@@ -77,14 +77,14 @@ const cerulean = {
                     Boulder Badge!
                     `,
             hp: -10,
-            pokemon: 20
+            experience: 20
         },
     ]
 };
 
 const vermillion = {
     id: 'vermillion',
-    title: 'Showdown in Pewter City',
+    title: 'Vermillion City: Electric Shock Showdown',
     description: `
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
@@ -119,14 +119,14 @@ const vermillion = {
                     Boulder Badge!
                     `,
             hp: -10,
-            pokemon: 20
+            experience: 20
         },
     ]
 };
 
 const saffron = {
     id: 'saffron',
-    title: 'Showdown in Pewter City',
+    title: 'The Psychic Showdown: Saffron City',
     description: `
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
@@ -161,14 +161,14 @@ const saffron = {
                     Boulder Badge!
                     `,
             hp: -10,
-            pokemon: 20
+            experience: 20
         },
     ]
 };
 
 const celadon = {
     id: 'celadon',
-    title: 'Showdown in Pewter City',
+    title: 'Celadon City Scent-sation',
     description: `
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
@@ -203,14 +203,14 @@ const celadon = {
                     Boulder Badge!
                     `,
             hp: -10,
-            pokemon: 20
+            experience: 20
         },
     ]
 };
 
 const fuchsia = {
     id: 'fuchsia',
-    title: 'Showdown in Pewter City',
+    title: 'Fuchsia City Ninja Showdown',
     description: `
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
@@ -245,14 +245,14 @@ const fuchsia = {
                     Boulder Badge!
                     `,
             hp: -10,
-            pokemon: 20
+            experience: 20
         },
     ]
 };
 
 const cinnabar = {
     id: 'cinnabar',
-    title: 'Showdown in Pewter City',
+    title: 'Volcanic Panic on Cinnabar Island',
     description: `
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
@@ -287,14 +287,14 @@ const cinnabar = {
                     Boulder Badge!
                     `,
             hp: -10,
-            pokemon: 20
+            experience: 20
         },
     ]
 };
 
 const viridian = {
     id: 'viridian',
-    title: 'Showdown in Pewter City',
+    title: 'Battle of the Badge: Viridian City',
     description: `
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
@@ -329,7 +329,7 @@ const viridian = {
                     Boulder Badge!
                     `,
             hp: -10,
-            pokemon: 20
+            experience: 20
         },
     ]
 };
