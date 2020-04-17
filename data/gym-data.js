@@ -5,6 +5,11 @@ const pewter = {
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
     `,
+    map: {
+        top: '45%',
+        left: '55%'
+    },
+    
     choices: [
         {
             id: 'grass',

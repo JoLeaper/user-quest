@@ -13,7 +13,6 @@ submitButton.addEventListener('click', () => {
     } else if (user.hp < 0) {
         renderLose();
         localStorage.clear();
-
     } else {
         window.location.href = '../map-page/index.html';
     }

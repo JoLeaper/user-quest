@@ -1,4 +1,5 @@
-import { findById } from '../common/utilities.js';
+import { findById, getUser } from '../common/utilities.js';
+import { hpArray, expArray } from '../data/final-result.js';
 
 export const renderResult = () => {
     // grabs the HTML elements to be rendered
@@ -51,3 +52,40 @@ export const renderLose = () => {
     questTitle.textContent = 'Too Bad!';
     questResult.textContent = resultMessage;
 };
+
+export const renderFinal = () => {
+    const questTitle = document.getElementById('quest-title');
+    const questResult = document.getElementById('result-message');
+
+    const user = getUser();
+    const finalHp = user.hp;
+    const finalExp = user.exp;
+
+    let hpMessageIndex;
+    let expMessageIndex;
+
+    if (finalHp > 67) {
+        hpMessageIndex = 0;
+    } else if (finalHp < 67 && finalHp > 33) {
+        hpMessageIndex = 1;
+    } else {
+        hpMessageIndex = 2;
+    }
+
+    if (finalExp > 67) {
+        expMessageIndex = 0;
+    } else if (finalExp < 67 && finalExp > 33) {
+        expMessageIndex = 1;
+    } else {
+        expMessageIndex = 2;
+    }
+    
+
+
+    const resultMessage = `${user.name}, congratulations for making it to the Pokemon League! Only a select few trainers can say they made it this far, so you've already cemented your place in history!
+    ${hpArray[hpMessageIndex]}. After the Champion arrives, ${expMessageIndex}.`
+
+    questTitle.textContent = 'Indigo Plateau';
+    questResult.textContent = resultMessage;
+
+}
