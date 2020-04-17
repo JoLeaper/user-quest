@@ -7,5 +7,8 @@ const kantoMap = document.getElementById('map-container');
 
 const userData = getUser();
 createBanner(userData);
-const newLink = createLink(adventureData[0]);
-kantoMap.append(newLink);
+
+adventureData.forEach((adventure) => {
+    const newLink = createLink(adventure);
+    kantoMap.append(newLink);
+});

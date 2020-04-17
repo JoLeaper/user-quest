@@ -42,10 +42,10 @@ const pewter = {
 
 const cerulean = {
     id: 'cerulean',
-    title: 'Showdown in Pewter City',
+    title: 'The Water Flowers of Cerulean City',
     description: `
-        You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
-        pick up a new Pokemon! What type of Pokemon do you add to your team?
+            You feel the refreshing breeze of a fountain as you make your way into Cerulean City, ready to head straight to the gym!
+            But before you do, you get the urge to catch a Pokemon. What will you try to find?
     `,
     choices: [
         {
