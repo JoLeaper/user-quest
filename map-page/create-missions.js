@@ -1,5 +1,5 @@
-export const createMissions = ((data) => {
-    data.forEach(mission) {
+// export const createMissions = ((data) => {
+//     data.forEach(mission) {
         
-    }
-});
+//     }
+// });

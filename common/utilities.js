@@ -4,10 +4,19 @@ export const getUser = (() => {
     return user;
 });
 
-// export const createBanner = ((userData) => {
-//     const trainerImage = document.getElementById('trainer-picture');
+export const createBanner = ((userData) => {
+    console.log(userData);
+    console.log(userData.exp);
+    const trainerImage = document.getElementById('trainer-picture');
+    const trainerName = document.getElementById('name');
+    const trainerHp = document.getElementById('hp');
+    const trainerExp = document.getElementById('exp');
 
-//     trainerImage.src = `../` + userData.image;
+    console.log(userData.image);
+    trainerImage.src = `../${userData.icon}`;
+    trainerName.textContent = userData.name;
+    trainerHp.textContent = userData.hp;
+    trainerExp.textContent = userData.exp;
 
 
-// });
+});
