@@ -1,6 +1,6 @@
-export function selectPicture (trainerType) {
+export function selectPicture(trainerType) {
     let userPicture;
-    
+
     if (trainerType === 'boy') {
         const boyPicture = document.getElementById('boy-trainer');
         userPicture = boyPicture.getAttribute('src');

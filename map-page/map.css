@@ -1,0 +1,13 @@
+#map-container {
+    position: relative;
+    background-image: url('https://cdn.bulbagarden.net/upload/2/25/LGPE_Kanto_Map.png');
+    height: calc(90vw * 642 / 900);
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+#banner-container {
+    
+}
