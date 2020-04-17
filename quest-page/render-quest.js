@@ -9,8 +9,6 @@ export const renderQuest = (currentQuest) => {
     const firstSelect = document.getElementById('choice1');
     const secondSelect = document.getElementById('choice2');
     const thirdSelect = document.getElementById('choice3');
-    // const secondSelect =
-    // const thirdSelect =
 
     questTitle.textContent = currentQuest.title;
     questDescription.textContent = currentQuest.description;

@@ -3,8 +3,8 @@ import { findById } from '../common/utilities.js'
 import { renderResult } from './render-result.js';
 const submitButton = document.getElementById('submit');
 
-const params = new URLSearchParams(window.location.search);
-const questId = params.get('id');
-const currentQuest = findById(questId, adventureData);
+renderResult();
 
-renderResult(currentQuest, userChoice);
+submitButton.addEventListener('click', () => {
+    window.location.href = '../map-page/index.html';
+});

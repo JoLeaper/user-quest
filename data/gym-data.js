@@ -35,7 +35,7 @@ const pewter = {
                     Boulder Badge!
                     `,
             hp: -10,
-            pokemon: 20
+            experience: 20
         },
     ]
 };
