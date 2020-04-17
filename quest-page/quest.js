@@ -1,5 +1,5 @@
 import adventureData from '../data/gym-data.js';
-import { findById } from '../common/utilities.js'
+import { findById } from '../common/utilities.js';
 import { renderQuest } from './render-quest.js';
 import { storeChoice } from './store-choice.js';
 const submitButton = document.getElementById('submit');
