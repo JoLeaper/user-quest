@@ -3,12 +3,12 @@ import { getUser } from '../common/utilities.js';
 import { createBanner } from '../common/utilities.js';
 import { createLink } from './create-link.js';
 
-const newShit = document.getElementById('map-container');
+const kantoMap = document.getElementById('map-container');
 
 const userData = getUser();
 createBanner(userData);
 const newLink = createLink(adventureData[0]);
-newShit.append(newLink);
+kantoMap.append(newLink);
 
 
 
