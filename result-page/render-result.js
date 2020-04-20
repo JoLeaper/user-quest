@@ -1,5 +1,6 @@
 import { findById, getUser } from '../common/utilities.js';
 import { hpArray, expArray } from '../data/final-result.js';
+import { hasCompleted } from './has-completed.js';
 
 export const renderResult = () => {
     // grabs the HTML elements to be rendered
@@ -9,23 +10,23 @@ export const renderResult = () => {
     // grabs the user profile and choices from local storage
     const questInfo = localStorage.getItem('CHOICE');
     const parsedQuestInfo = JSON.parse(questInfo);
-    const currentQuest = parsedQuestInfo[0];
-    const userChoice = parsedQuestInfo[1];
+    const userData = getUser();
+    const completed = hasCompleted(userData);
 
-    const stringyUserData = localStorage.getItem('USER');
-    const userData = JSON.parse(stringyUserData);
+    if (completed === false) {
+        const currentQuest = parsedQuestInfo[0];
+        const userChoice = parsedQuestInfo[1];
 
+        const result = findById(userChoice, currentQuest.choices);
+        const resultMessage = result.result;
 
+        userData.hp += result.hp;
+        userData.exp += result.experience;
+        userData.completed[`${currentQuest.id}`] = true;
 
-    const result = findById(userChoice, currentQuest.choices);
-    const resultMessage = result.result;
-
-    userData.hp += result.hp;
-    userData.exp += result.experience;
-    userData.completed[`${currentQuest.id}`] = true;
-
-    questTitle.textContent = currentQuest.title;
-    questResult.textContent = resultMessage;
+        questTitle.textContent = currentQuest.title;
+        questResult.textContent = resultMessage;
+    }
 
     const updatedUserData = JSON.stringify(userData);
     localStorage.setItem('USER', updatedUserData);
@@ -44,10 +45,6 @@ export const renderLose = () => {
 
     const resultMessage = `You battled as hard as you could, but you couldn't make it to the League! Remember, every Pokemon has strengths and weaknesses.
     Study up, and you'll be able to make it to the league next time!`;
-
-    // userData.hp += result.hp;
-    // userData.exp += result.experience;
-    // userData.completed[`${currentQuest.id}`] = true;
 
     questTitle.textContent = 'Too Bad!';
     questResult.textContent = resultMessage;
@@ -73,19 +70,19 @@ export const renderFinal = () => {
     }
 
     if (finalExp > 67) {
-        expMessageIndex = 0;
+        expMessageIndex = 2;
     } else if (finalExp < 67 && finalExp > 33) {
         expMessageIndex = 1;
     } else {
-        expMessageIndex = 2;
+        expMessageIndex = 0;
     }
     
 
 
     const resultMessage = `${user.name}, congratulations for making it to the Pokemon League! Only a select few trainers can say they made it this far, so you've already cemented your place in history!
-    ${hpArray[hpMessageIndex]}. After the Champion arrives, ${expMessageIndex}.`
+    ${hpArray[hpMessageIndex].message} After the Champion arrives, ${expArray[expMessageIndex].message}.`;
 
     questTitle.textContent = 'Indigo Plateau';
     questResult.textContent = resultMessage;
 
-}
+};
