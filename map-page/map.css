@@ -1,0 +1,41 @@
+#map-container {
+    margin: auto;
+    width: 90%;
+    
+}
+
+#map {
+    position: relative;
+    background-image: url('https://cdn.bulbagarden.net/upload/2/25/LGPE_Kanto_Map.png');
+    height: calc(90vw * 642 / 900);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    text-align: center;
+}
+
+#banner-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#dynamic-container{
+    display: block;
+}
+
+#health {
+    font-weight: bold;
+}
+
+#experience {
+    font-weight: bold;
+
+}
+
+#trainer-picture {
+    width: 75px;
+    margin-bottom: 100px;
+}
+
