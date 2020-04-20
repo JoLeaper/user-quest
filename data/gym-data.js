@@ -6,8 +6,8 @@ const pewter = {
         pick up a new Pokemon! What type of Pokemon do you add to your team?
     `,
     map: {
-        top: '45%',
-        left: '55%'
+        top: '18%',
+        left: '18%'
     },
     
     choices: [
@@ -52,6 +52,11 @@ const cerulean = {
             You feel the refreshing breeze of a fountain as you make your way into Cerulean City, ready to head straight to the gym!
             But before you do, you get the urge to catch a Pokemon. What will you try to find?
     `,
+    map: {
+        top: '16%',
+        left: '52%'
+    },
+
     choices: [
         {
             id: 'grass',
@@ -94,6 +99,11 @@ const vermillion = {
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
     `,
+    map: {
+        top: '54%',
+        left: '50%'
+    },
+
     choices: [
         {
             id: 'grass',
@@ -136,6 +146,11 @@ const saffron = {
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
     `,
+    map: {
+        top: '34%',
+        left: '52%'
+    },
+
     choices: [
         {
             id: 'grass',
@@ -178,6 +193,12 @@ const celadon = {
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
     `,
+
+    map: {
+        top: '35%',
+        left: '39%'
+    },
+
     choices: [
         {
             id: 'grass',
@@ -220,6 +241,11 @@ const fuchsia = {
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
     `,
+
+    map: {
+        top: '75%',
+        left: '41%'
+    },
     choices: [
         {
             id: 'grass',
@@ -262,6 +288,11 @@ const cinnabar = {
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
     `,
+
+    map: {
+        top: '91%',
+        left: '13%'
+    },
     choices: [
         {
             id: 'grass',
@@ -304,6 +335,11 @@ const viridian = {
         You arrive to Pewter City, home of the rugged Rock-Type Gym Leader Brock! To prepare for the battle ahead, you decide to
         pick up a new Pokemon! What type of Pokemon do you add to your team?
     `,
+    map: {
+        top: '44%',
+        left: '16%'
+    },
+
     choices: [
         {
             id: 'grass',

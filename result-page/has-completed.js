@@ -8,18 +8,10 @@ export const hasCompleted = (user) => {
                 i++;
             }   
         }
-
         if (i > 7) {
             hasCompleted = true;
         }
-
-
-
-
-
-
     }
-
     return hasCompleted;
 };
 

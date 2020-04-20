@@ -8,9 +8,10 @@ export const createQuestLink = (object) => {
     link.title = window.location.href;
     link.href = `../quest-page/index.html?id=${object.id}`;
 
-    //style 1
-    //style 2
-    //style 3
+    link.style.position = 'absolute';
+    link.style.top = object['map'].top;
+    link.style.left = object['map'].left;
+    link.style.background = 'black';
 
     return link;
 
