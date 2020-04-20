@@ -1,5 +1,3 @@
-// import adventureData from '../data/gym-data.js';
-// import { findById } from '../common/utilities.js'
 import { renderResult, renderLose, renderFinal } from './render-result.js';
 import { getUser } from '../common/utilities.js';
 import { hasCompleted } from '../result-page/has-completed.js';

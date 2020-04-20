@@ -24,10 +24,11 @@ export const createCompletedLink = (object) => {
 
     completedLink.appendChild(completedTitle);
 
-
-    //style 1
-    //style 2
-    //style 3
+    completedLink.style.position = 'absolute';
+    completedLink.style.top = object['map'].top;
+    completedLink.style.left = object['map'].left;
+    completedLink.style.background = 'black';
+    completedLink.style.color = 'white';
 
     return completedLink;
 

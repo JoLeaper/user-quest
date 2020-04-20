@@ -3,7 +3,7 @@ import { getUser } from '../common/utilities.js';
 import { createBanner } from '../common/utilities.js';
 import { createQuestLink, createCompletedLink } from './create-link.js';
 
-const kantoMap = document.getElementById('map-container');
+const kantoMap = document.getElementById('map');
 
 const userData = getUser();
 createBanner(userData);
